@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Reminder</title>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
+    <link rel="stylesheet" type="text/css" href="./js/jquery.tooltip.js/jquery.tooltip.css" />
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/memoremainder.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body background="./img/webtreats_stone_3.jpg">
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="">Reminder</a>
+    <ul class="nav">
+      <li class="active"><a href="index">Home</a></li>
+      <li><a href="logout"><i class="icon-off"></i>Logout</a></li>
+<!--      
+<form class="navbar-form pull-left">
+  <input type="text" class="span2">
+  <button type="submit" class="btn">Submit</button>
+</form>
+-->
+      
+      <li>
+      <!--
+[%- IF! c.user_exists -%]-->
+  <form method="POST" class="navbar-form pull-right"><br>
+      ユーザ名:
+      <input type="text" name="uid" size="15" class="span2"/>
+      パスワード:<input type="password" name="passwd" size="15" />
+      <input type="submit" class="btn" value="ログイン" />
+      
+  </form>
+  <div style="color:Red;">[% error | html %]</div>
+<!--[%- END -%]-->
+</li>
+      
+    </ul>
+  </div>
+</div>

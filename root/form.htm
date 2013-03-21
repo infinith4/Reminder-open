@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>無題ドキュメント</title>
+<link href="./css/memo.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="memoedit" style="background-color : #AAEEDD">
+	<h3>メッセージフォーム</h3>
+	<p class="close"><a href="javascript:closeform()"><img src="img/close_button.png" width="66" height="66" alt="Close" /></a></p>
+	<form method="post" action="/memo" name="mailform" id="mailform">
+	  <!-- memo's id を渡す-->
+      <p id="item">aaa</p>
+      メモあああ:<textarea name="memo" id="memo" rows="3" cols="40" class="chkrequired"></textarea>
+
+		<div class="buttonArea">
+			<button type="submit">aこの内容で送信</button>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
